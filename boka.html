@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Boka rum på Karlskrona Stadshotell.">
+  <title>Karlskrona Stadshotell - Boka</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="top">
+      <div class="logo">
+        <strong>KARLSKRONA<br>STADSHOTELL</strong>
+        <small>1890</small>
+      </div>
+      <img src="images/hotell.png" alt="Karlskrona Stadshotell">
+    </div>
+    <nav>
+      <a href="index.html">Välkommen</a>
+      <a href="boka.html">Boka</a>
+      <a href="hitta.html">Hitta</a>
+      <a href="kontakta.html">Kontakta</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h1>Boka rum</h1>
+      <p>Fyll i formuläret för att skicka en bokningsförfrågan.</p>
+      <form id="booking-form">
+        <label for="namn">Namn</label>
+        <input id="namn" name="namn" type="text" required>
+
+        <label for="email">E-post</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="ankomst">Ankomst</label>
+        <input id="ankomst" name="ankomst" type="date" required>
+
+        <label for="avresa">Avresa</label>
+        <input id="avresa" name="avresa" type="date" required>
+
+        <label for="rum">Rumstyp</label>
+        <select id="rum" name="rum">
+          <option>Enkelrum</option>
+          <option>Dubbelrum</option>
+          <option>Familjerum</option>
+        </select>
+
+        <label for="meddelande">Meddelande</label>
+        <textarea id="meddelande" name="meddelande"></textarea>
+
+        <button type="submit">Skicka bokning</button>
+        <p id="result"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    Karlskrona Stadshotell | Nygatan 9 | 248 9 Karlskrona | 073-037 35 76
+  </footer>
+
+</body>
+
+</html>
