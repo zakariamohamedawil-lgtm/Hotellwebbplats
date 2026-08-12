@@ -5,6 +5,6 @@ if (form) {
         event.preventDefault();
 
         const result = document.querySelector("#result");
-        result.textContent = "Tack! Din bokningsförfrågan har skickats😁.";
+        result.textContent = "Tack! Din bokningsförfrågan har skickats.";
     });
 }
